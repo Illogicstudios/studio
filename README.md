@@ -1,6 +1,6 @@
-# TemplateNoUI Tool
+# Studio Tool
 
-> TemplateNoUI is a tool to ...
+> Studio is a tool to toggle a studio in the scene
 
 ## How to install
 
@@ -11,7 +11,7 @@ You must specify the correct path of the installation folder in the ```template_
 ```python
 if __name__ == '__main__':
     # TODO specify the right path
-    install_dir = 'PATH/TO/template_noui'
+    install_dir = 'PATH/TO/studio'
     # [...]
 ```
 
@@ -19,12 +19,5 @@ if __name__ == '__main__':
 
 ## Feature
 
-<div align="center">
-  <span>
-    <img src="https://user-images.githubusercontent.com/94440879/216031775-d9ea680f-9a91-4f19-bc4c-6dd7fae4aa6b.png" width=50%>
-  </span>
-  <p weight="bold">Caption</p>
-  <br/>
-</div>
-
-[...]
+The tool will add a reference of a studio in the scene if it doesn't already exist. If it 
+exists, the reference is removed from the scene
