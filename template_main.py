@@ -3,13 +3,12 @@ import importlib
 
 if __name__ == '__main__':
     # TODO specify the right path
-    install_dir = 'PATH/TO/template_noui'
+    install_dir = 'PATH/TO/studio'
     if not sys.path.__contains__(install_dir):
         sys.path.append(install_dir)
 
-    # TODO import right modules
     modules = [
-        "maya_app"
+        "studio_loader"
     ]
 
     from utils import *
@@ -18,8 +17,6 @@ if __name__ == '__main__':
     for module in modules:
         importlib.import_module(module)
 
-    # TODO import the app
-    from maya_app import *
+    import studio_loader
 
-    # TODO rename app variable
-    maya_app.run()
+    studio_loader.run()
